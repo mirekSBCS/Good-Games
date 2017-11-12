@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>submit a story to gg </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  <link rel="stylesheet" href="./forms.css">
+
+ <script
+ src="https://code.jquery.com/jquery-3.2.1.min.js"
+ integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+ crossorigin="anonymous"></script>
+
+ <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+ <script type="text/javascript" src="./forms.js"></script>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-wrapper #455a64 blue-grey darken-2">
+      <a href="#" class="brand-logo"><img src="giphy.gif" id="logo"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Home</a></li>
+        <li><a href="badges.html">Gaming Benefits</a></li>
+        <li><a href="collapsible.html">Expirences</a></li>
+        <li><a href="forms.html">submit</a></li>
+        </ul>
+    </div>
+  </nav>
+<div class="row"></div>
+<div class="row"></div>
+<div class="row"></div>
+<div class="row">
+  <div class="col s6 offset-s4">
+<h1 class="head">experience submitter</h1>
+</div>
+</div>
+<div class="row"></div>
+<div class="row"></div>
+<div class="row"></div>
+<div class="row"></div>
+<div class="row"></div>
+<div class="row"></div>
+<div id="enter">
+  <div class="row">
+    <form class="col s12">
+      <div class="row"></div>
+      <div class="row"></div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Gamertag" id="first_name" type="text">
+          <label for="first_name">Gamertag</label>
+        </div>
+
+<div class="row">
+      <div class="input-field col s6">
+        <select id="genre">
+          <option value="" disabled selected>Game Genre</option>
+          <option value="platformer">Platformers</option>
+          <option value="RPG">RPG's</option>
+          <option value="MMO">MMO's</option>
+          <option value="shooter">Shooters</option>
+          <option value="sandbox">Sandboxes</option>
+          <option value="fighter">Fighters</option>
+        </select>
+        <label>Game Genre</label>
+      </div>
+</div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="game name" id="game_name" type="text">
+          <label for="game_name">Game name</label>
+        </div>
+      </div>
+      <form action="#">
+    <div class="file-field input-field">
+      <div class="btn">
+        <span>screenshot</span>
+        <input type="file" id="srcshot">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="text" type="text">
+      </div>
+    </div>
+  </form>
+      <div class="row">
+       <div class="input-field col s12">
+         <textarea id="story" class="materialize-textarea"></textarea>
+         <label for="textarea1">Story</label>
+       </div>
+     </div>
+     <div class="row">
+     <a class="waves-effect waves-light btn" id="sub">submit</a>
+     </div>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

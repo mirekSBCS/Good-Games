@@ -1,0 +1,38 @@
+P {
+  padding-left:25px;
+}
+
+.topPost{
+  border: 10px solid #bbdefb;
+  background-color: #bbdefb;
+}
+.Header {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+}
+Body{
+  background-color:#bdbdbd;
+}
+.screenshot{
+  width: 267px;
+  height: 267px;
+
+}
+
+#logo{
+  width: 100px;
+  height: 64px;
+}
+
+#david{
+  width: 200px;
+  height: 200px;
+}
+#car{
+  height:260px;
+}
+
+#cadiz{
+  width: 200px;
+  height: 200px;
+}

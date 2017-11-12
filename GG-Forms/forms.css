@@ -1,0 +1,20 @@
+#logo{
+  width: 100px;
+  height: 64px;
+}
+#meow{
+  width:400px;
+  height:400px;
+}
+body{
+  background-color:#bdbdbd;}
+#txt{
+  color: black;
+}
+#enter{
+  background-color:white;
+}
+.head{
+  font-family: 'Orbitron', sans-serif;
+  color: black;
+}

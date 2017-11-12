@@ -1,0 +1,32 @@
+#logo{
+  width: 100px;
+  height: 64px;
+}
+#meow{
+  width:400px;
+  height:400px;
+}
+body{
+  background-color:#bdbdbd;}
+#txt{
+  color: black;
+}
+#enter{
+  color: black;
+}
+.head{
+  font-family: 'Orbitron', sans-serif;
+  color: black;
+  margin-left: 15%;
+}
+.btn{
+  background-color: indigo;
+  text-align: center;
+  margin-left: 10%;
+}
+#genre{
+  background-color: #bdbdbd;
+}
+input{
+  color: black;
+}

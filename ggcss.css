@@ -1,0 +1,71 @@
+padding-top: 0;
+#nav_height{
+padding-bottom: 0;
+height: 35px;
+}
+
+.description{
+  vertical-align: middle;
+}
+
+#container{
+  padding-left: 25px;
+}
+
+.zoidberg{
+  text-align: center;
+}
+
+
+.orbit{
+  font-family: 'Orbitron', sans-serif;
+}
+
+body{
+  background-color:#bdbdbd;
+}
+
+.coloures{
+  background-color:indigo;
+}
+
+button{
+  padding :10px;
+  margin: 5px;
+  background-color: #bbdefb;
+  font-size: 20px;
+  border: 2px solid black;
+  width: 140px;
+}
+
+.chip{
+  padding-left:50px;
+  border-radius: 150%;
+  color: white;
+}
+
+#logo{
+  width: 100px;
+   height: 64px;
+}
+
+.bubble{
+  padding :10px;
+  margin: 5px;
+  background-color: lightblue;
+  font-size: 10px;
+  border: 1px solid black;
+  width: 25px;
+  text-align: center;
+}
+
+.textu{
+  color:white;
+}
+
+.count{
+  color:white;
+}
+.gname{
+  color: white;
+}
