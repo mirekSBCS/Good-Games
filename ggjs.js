@@ -19,10 +19,12 @@ loadData();
 function loadData() {
   firebase.database().ref('Entry/').on('value',function(snapshot) {
     var entries = snapshot.val();
+    likeNum = 0;
     //Load the text - this works
     for(var i in entries){
       var scopeWrapper = function (_i) {
         firebase.storage().ref().child('Entry/'+_i).getDownloadURL().then(function(url){
+          likeNum++;
           var fname = entries[_i].first_name;
           var gname = entries[_i].game_name;
           var story = entries[_i].story;
@@ -42,9 +44,8 @@ function loadData() {
               '<div class="row" class="likebox">'+
                 '<h6 class="gname" class="col s1 gname">'+gname+'</h6>'+
                 '<div class="col s1 offset-s9">'+
-                  '<img src="8bitlove.png" style="width:50px;height:50px;" class="like" class="like">'+likeCount+
-                '</div>'+
-                '<div class="col s1"> <h6 class="count" class="count"></h6></div>'+
+                  '<img src="8bitlove.png" style="width:50px;height:50px;" class="like" id="like'+likeNum+'"></div>'+
+                '<div class="col s1"> <h6 class="count" id="count'+likeNum+'">'+likeCount+'</h6></div>'+
               '</div>'+
               '<div class="row">'+
                 '<div class="col s2.5 postimage"><img class="gameImage" src="'+url+'" style="width:284px;height:160px;"></div>'+
@@ -53,22 +54,22 @@ function loadData() {
               '<br>'+
             '</div>'
           );
+          $('.like').unbind("click"s).click(add);
         }).catch(function(error){
           console.log(error)
         });
       };
       scopeWrapper(i);
     }
-  $('.like').click(add);
   });
 }
 
 function add(){
-  console.log("click");
+
   var id = $(this).attr('id').replace(/like/,'');
   var likeCount = $("#count"+id).html();
   likeCount = parseInt(likeCount);
-
+  console.log(likeCount);
   var obj = $("#count" + id);
   if( obj.data('liked') ){
       obj.data('liked', false);
