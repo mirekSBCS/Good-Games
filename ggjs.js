@@ -54,7 +54,7 @@ function loadData() {
               '<br>'+
             '</div>'
           );
-          $('.like').unbind("click"s).click(add);
+          $('.like').unbind("click").click(add);
         }).catch(function(error){
           console.log(error)
         });
